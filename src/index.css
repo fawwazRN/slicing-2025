@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-inter: "inter";
+  --color-utama: #4a5568;
+  --color-biru: #6675f7;
+  --color-ungu: #57007b;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-linear-to-bl! from-[#f76680]! to-ungu! border-transparent!;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  @apply bg-transparent! border-gray-600! border!;
+}
+
+.swiper-pagination-bullet {
+  @apply size-3.25!;
+}
+
+.swiper-pagination {
+  @apply mt-20! static!;
+}
