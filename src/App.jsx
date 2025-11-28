@@ -1,7 +1,7 @@
-import Header from "./components/header";
-import Hero from "./components/hero";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Penjelasan from "./components/Penjelasan";
-import ServicesPage from "./components/servicesPage";
+import ServicesPage from "./components/ServicesPage";
 
 function App() {
   return (
