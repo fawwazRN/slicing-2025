@@ -56,8 +56,12 @@ function CardProfile({ Testimoni, isActive, onClick }) {
       </div>
 
       {/* Nama dan Jabatan */}
-      <p className="mt-1 font-bold text-gray-800">{Testimoni.name}</p>
-      <p className="text-gray-500 text-sm">{Testimoni.title}</p>
+      <p className="mt-1 font-bold text-gray-800 text-center">
+        {Testimoni.name}
+      </p>
+      <p className="max-sm:hidden text-gray-500 text-sm text-center">
+        {Testimoni.title}
+      </p>
     </div>
   );
 }
@@ -78,7 +82,7 @@ export default function Testimoni() {
   };
   return (
     <section className="bg-white py-12 font-inter">
-      <div className="mx-auto px-20">
+      <div className="mx-auto px-20 max-sm:px-5">
         {/* header */}
         <div className="mb-10 text-center">
           <div className="bg-purple-600 mx-auto mb-2 w-16 h-1"></div>
@@ -101,10 +105,10 @@ export default function Testimoni() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon-tabler-arrow-left icons-tabler-outline icon icon-tabler">
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="icon-tabler-arrow-left icons-tabler-outline icon icon-tabler">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M5 12l14 0" />
               <path d="M5 12l6 6" />
@@ -115,7 +119,7 @@ export default function Testimoni() {
           {/* Konten Ulasan Aktif */}
           <div className="relative flex items-center min-h-[120px] text-center transition-opacity duration-500">
             <svg
-              className="top-0 absolute"
+              className="top-0 max-sm:-left-4 absolute"
               width="14"
               height="24"
               viewBox="0 0 14 24"
@@ -133,8 +137,8 @@ export default function Testimoni() {
                   x2="20.3519"
                   y2="11.9167"
                   gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F76680" />
-                  <stop offset="1" stop-color="#57007B" />
+                  <stop stopColor="#F76680" />
+                  <stop offset="1" stopColor="#57007B" />
                 </linearGradient>
               </defs>
             </svg>
@@ -161,8 +165,8 @@ export default function Testimoni() {
                   x2="20.3519"
                   y2="11.9167"
                   gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F76680" />
-                  <stop offset="1" stop-color="#57007B" />
+                  <stop stopColor="#F76680" />
+                  <stop offset="1" stopColor="#57007B" />
                 </linearGradient>
               </defs>
             </svg>
@@ -180,10 +184,10 @@ export default function Testimoni() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon-tabler-arrow-right icons-tabler-outline icon icon-tabler">
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="icon-tabler-arrow-right icons-tabler-outline icon icon-tabler">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M5 12l14 0" />
               <path d="M13 18l6 -6" />
@@ -192,7 +196,7 @@ export default function Testimoni() {
           </button>
         </div>
         {/* Daftar Profil Pelanggan di Bagian Bawah */}
-        <div className="flex justify-center gap-25 mt-16">
+        <div className="flex justify-center max-sm:justify-between gap-25 mt-16">
           {testimoniin.map((t, index) => (
             <CardProfile
               key={t.id}
