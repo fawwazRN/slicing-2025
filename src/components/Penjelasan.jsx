@@ -4,7 +4,7 @@ export default function Penjelasan() {
   return (
     <section className="relative flex max-sm:flex-col-reverse justify-center items-center gap-40 max-sm:gap-20 bg-white px-40 max-sm:px-5 pt-20 w-full overflow-hidden font-inter">
       <div className="-top-9 left-120.75 absolute bg-linear-to-bl from-[#F76680] to-[#57007B] rounded-full size-18"></div>
-      <div className="w-4/5">
+      <div className="w-4/5 max-sm:w-full">
         <div className="bg-linear-to-bl from-[#F76680] to-[#57007B] mb-5 w-17 h-1.25"></div>
         <h2 className="mb-7.5 text-4xl leading-[55px]">
           Leading companies trust us{" "}

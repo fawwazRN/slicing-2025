@@ -43,7 +43,7 @@ function CardProfile({ Testimoni, isActive, onClick }) {
       <div
         className={`p-1 rounded-full transition-all duration-300 ${
           isActive ? "bg-linear-to-r from-purple-500 to-pink-500" : ""
-        }`}>
+        } max-sm:${isActive ? "block" : "hidden"}`}>
         <img
           src={Testimoni.avatar}
           alt={Testimoni.name}
@@ -51,15 +51,24 @@ function CardProfile({ Testimoni, isActive, onClick }) {
         />
         {/* Bintang */}
       </div>
-      <div className="mt-2 text-yellow-400 text-xl">
+      <div
+        className={`transition-all duration-300 mt-2 text-yellow-400 text-xl block max-sm:${
+          isActive ? "block" : "hidden"
+        }`}>
         {bintang(Testimoni.rating)}
       </div>
 
       {/* Nama dan Jabatan */}
-      <p className="mt-1 font-bold text-gray-800 text-center">
+      <p
+        className={`transition-all duration-300 mt-1 font-bold text-gray-800 text-center max-sm:${
+          isActive ? "block" : "hidden"
+        }`}>
         {Testimoni.name}
       </p>
-      <p className="max-sm:hidden text-gray-500 text-sm text-center">
+      <p
+        className={`text-gray-500 text-sm text-center max-sm:${
+          isActive ? "block" : "hidden"
+        }`}>
         {Testimoni.title}
       </p>
     </div>
@@ -81,7 +90,7 @@ export default function Testimoni() {
     setActiveIndex(index);
   };
   return (
-    <section className="bg-white py-12 font-inter">
+    <section className="bg-white py-12 w-full font-inter">
       <div className="mx-auto px-20 max-sm:px-5">
         {/* header */}
         <div className="mb-10 text-center">
@@ -92,11 +101,11 @@ export default function Testimoni() {
           </h2>
         </div>
         {/* slider container */}
-        <div className="flex justify-between items-center gap-20">
+        <div className="flex justify-between items-center gap-20 max-sm:gap-2">
           {/* Tombol Kiri (Prev) */}
           <button
             // Styling Tombol Kiri: lingkaran putih, border ungu, ikon ungu, posisi absolut
-            className="flex justify-center items-center bg-white hover:bg-[#57007B] p-5 border-[#57007B] border-2 hover:border-white rounded-full text-[#57007B] hover:text-white transition-all duration-300 cursor-pointer"
+            className="flex justify-center items-center bg-white hover:bg-[#57007B] p-5 max-sm:p-2 border-[#57007B] border-2 hover:border-white rounded-full text-[#57007B] hover:text-white transition-all duration-300 cursor-pointer"
             onClick={sebelum}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +184,7 @@ export default function Testimoni() {
           {/* Tombol Kanan (Next) */}
           <button
             // Styling Tombol Kanan: lingkaran ungu, ikon putih, posisi absolut
-            className="flex justify-center items-center bg-white hover:bg-[#57007B] p-5 border-[#57007B] border-2 hover:border-white rounded-full text-[#57007B] hover:text-white transition-all duration-300 cursor-pointer"
+            className="flex justify-center items-center bg-white hover:bg-[#57007B] p-5 max-sm:p-2 border-[#57007B] border-2 hover:border-white rounded-full text-[#57007B] hover:text-white transition-all duration-300 cursor-pointer"
             onClick={next}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +205,7 @@ export default function Testimoni() {
           </button>
         </div>
         {/* Daftar Profil Pelanggan di Bagian Bawah */}
-        <div className="flex justify-center max-sm:justify-between gap-25 mt-16">
+        <div className="max-sm:block flex justify-center gap-25 mt-16">
           {testimoniin.map((t, index) => (
             <CardProfile
               key={t.id}

@@ -10,8 +10,8 @@ export default function LogoAnimate() {
     { alt: "tech mate", src: lg3 },
   ];
   return (
-    <section className="bg-white py-10 sm:py-16 lg:py-24 font-inter">
-      <div className="relative px-40 pb-20 overflow-hidden text-4xl">
+    <section className="bg-white max-sm:px-5 py-24 font-inter">
+      <div className="relative px-40 max-sm:px-0 pb-20 overflow-hidden text-4xl">
         <div className="right-150 -bottom-9 absolute bg-linear-to-bl from-[#F76680] to-[#57007B] rounded-full size-18"></div>
         <div className="bg-linear-to-bl from-[#F76680] to-[#57007B] mb-5 w-17 h-1.25"></div>
         <h2 className="leading-[55px]">
