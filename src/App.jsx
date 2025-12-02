@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logo from "./components/Logo";
 import Testimoni from "./components/Testimoni";
+import CaseStudies from "./components/CaseStudies";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Penjelasan />
       <Logo />
       <Testimoni />
+      <CaseStudies />
     </>
   );
 }
