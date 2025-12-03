@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Logo from "./components/Logo";
 import Testimoni from "./components/Testimoni";
 import CaseStudies from "./components/CaseStudies";
+import DevelopmentApproach from "./components/DevelopmentApproach";
+import Hiring from "./components/hiring";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Logo />
       <Testimoni />
       <CaseStudies />
+      <DevelopmentApproach />
+      <Hiring />
     </>
   );
 }

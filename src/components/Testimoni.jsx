@@ -94,7 +94,8 @@ export default function Testimoni() {
       <div className="mx-auto px-20 max-sm:px-5">
         {/* header */}
         <div className="mb-10 text-center">
-          <div className="bg-purple-600 mx-auto mb-2 w-16 h-1"></div>
+          <div className="bg-linear-to-bl from-[#F76680] to-[#57007B] m-auto mb-5 w-17 h-1.25"></div>
+
           <h2 className="text-gray-800 text-4xl">
             Why customers love{" "}
             <span className="block font-bold">working with us</span>

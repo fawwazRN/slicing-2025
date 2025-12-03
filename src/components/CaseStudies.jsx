@@ -10,7 +10,7 @@ export default function CaseStudies() {
         "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
       link: "www.google.com",
       img: appLari,
-      color: "F1F2FF",
+      color: "#F1F2FF",
       id: 1,
     },
     {
@@ -19,7 +19,7 @@ export default function CaseStudies() {
         "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
       link: "www.google.com",
       img: appGoal,
-      color: "F0FFF7",
+      color: "#F0FFF7",
       id: 2,
     },
     {
@@ -33,8 +33,10 @@ export default function CaseStudies() {
     },
   ];
   return (
-    <section className="relative flex flex-col justify-center items-center gap-20 max-sm:gap-20 bg-[#F9F9FF] px-40 max-sm:px-5 pt-20 w-full overflow-hidden font-inter">
+    <section className="relative flex flex-col justify-center items-center gap-20 max-sm:gap-10 bg-[#F9F9FF] px-40 max-sm:px-5 pt-20 w-full overflow-hidden font-inter">
       <div className="text-4xl text-center leading-[55px]">
+        <div className="bg-linear-to-bl from-[#F76680] to-[#57007B] m-auto mb-5 w-17 h-1.25"></div>
+
         <h3>Our recent</h3>
         <h2 className="font-bold">Case studies</h2>
       </div>
