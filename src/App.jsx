@@ -8,7 +8,8 @@ import Logo from "./components/Logo";
 import Testimoni from "./components/Testimoni";
 import CaseStudies from "./components/CaseStudies";
 import DevelopmentApproach from "./components/DevelopmentApproach";
-import Hiring from "./components/Hiring.jsx";
+import Hiring from "./components/Hiring";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <CaseStudies />
       <DevelopmentApproach />
       <Hiring />
+      <Footer />
     </>
   );
 }
