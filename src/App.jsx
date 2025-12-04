@@ -8,7 +8,7 @@ import Logo from "./components/Logo";
 import Testimoni from "./components/Testimoni";
 import CaseStudies from "./components/CaseStudies";
 import DevelopmentApproach from "./components/DevelopmentApproach";
-import Hiring from "./components/hiring";
+import Hiring from "./components/Hiring.jsx";
 
 function App() {
   return (
